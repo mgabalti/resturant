@@ -19,8 +19,6 @@ export async function GET() {
 
 export async function POST(request) {
     try {
-        debugger
-        console.log("request", request);
         
         let data;
         await mongoose.connect(connectionStr);

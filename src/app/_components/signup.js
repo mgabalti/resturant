@@ -40,7 +40,7 @@ const Signup = () => {
     };
 
     return (
-        <div className="flex min-h-screen flex-col justify-center px-6 py-12 lg:px-8">
+        <div className="flex  flex-col justify-center px-6 pt-12 lg:px-8">
             <div className="sm:mx-auto sm:w-full sm:max-w-lg">
                 <img
                     className="mx-auto h-10 w-auto"
@@ -154,13 +154,7 @@ const Signup = () => {
                     </button>
                 </form>
 
-                <p className="mt-10 text-center text-sm text-gray-500">
-                    Already have an account?{" "}
-                    < a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
-                        Sign in here
-                        x
-                    </a> 
-                </p>
+                
             </div>
         </div>
     );

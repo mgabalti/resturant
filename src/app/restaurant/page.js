@@ -11,10 +11,15 @@ const Restaurant = () => {
     return (
         <div className="w-full">
             {login ? <Login /> : <Signup />}
-            <div className="text-center mt-3">
-                <button className="btn btn-primary" onClick={() => setLogin(!login)}>
-                    {login ? "Switch to Signup" : "Switch to Login"}
-                </button>
+            <div className="text-center mt-0">
+            <p className="mt-10 text-center text-sm text-gray-500" >
+                   
+                    {login ? " Don't Account " : " Already have an account?"}
+                    < a   onClick={() => setLogin(!login)} className="font-semibold text-indigo-600 hover:text-indigo-500 cursor-pointer">
+                    {login ? " Signup" : " Login"}
+                    </a> 
+                </p>
+                
             </div>
         </div>
     );
