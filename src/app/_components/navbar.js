@@ -3,7 +3,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-
+import Image from 'next/image'
 const NavbarComponent = () => {
   const [isOpen, setIsOpen] = useState(false);
 const [isdarkMode, setIsdarkMode] = useState(false);  
@@ -29,13 +29,15 @@ const [isdarkMode, setIsdarkMode] = useState(false);
   }
     , []);
   return (
-    <nav className="bg-white shadow-md dark:bg-black dark:text-white">
-      <div className="container mx-auto px-4 flex justify-between items-center py-4">
-        <Link href="/" className="text-xl font-semibold text-gray-800 dark:text-white">
-          Navbar
+    <nav className="">
+      <div className="lg:container dark:bg-black restaurent-nav  mx-auto px-4 flex justify-between items-center py-4 bg-white dark:bg-gray-black ">
+        <Link href="/" className="text-xl font-semibold text-white">
+         <Image width={100} src="https://bizantheme.com/html/foodking-php/assets/img/logo/logo.svg" alt="logo" height={50} />
         </Link>
+        <div>
+
         <button
-          className="md:hidden text-gray-800 focus:outline-none"
+          className="lg:hidden  focus:outline-none dark:text-white"
           onClick={() => setIsOpen(!isOpen)}
         >
           <svg
@@ -53,40 +55,41 @@ const [isdarkMode, setIsdarkMode] = useState(false);
             />
           </svg>
         </button>
+        </div>
         <div
-          className={`${isOpen ? "block" : "hidden"
-            } md:flex md:items-center md:space-x-6 w-full md:w-auto`}
+          className={`${isOpen ? "show-nav show" : "show-nav"
+            } lg:block lg:items-center lg:space-x-6 top-0   lg:mt-0 fixed lg:static w-80 lg:w-full ` }
         >
-          <ul className="flex flex-col md:flex-row md:space-x-6 mt-4 md:mt-0">
+          <ul className="flex flex-col lg:flex-row lg:space-x-6 top-0 left-0 mt-0 h-screen lg:h-auto bg-white dark:bg-black lg:dark:bg-transparent  lg:bg-transparent">
             <li>
-              <Link href="/" className="block px-3 py-2 dark:text-white text-gray-800 hover:text-blue-600">
+              <Link href="/" className="block px-3 py-2 text-white  hover:text-blue-600">
                 Home
               </Link>
             </li>
             <li>
-              <Link href="/restaurant" className="block px-3 py-2 dark:text-white text-gray-800 hover:text-blue-600">
+              <Link href="/restaurant" className="block px-3 py-2  dark:text-white text-black lg:text-white  hover:text-blue-600">
                 Restaurant
               </Link>
             </li>
             <li>
-              <Link href="/restaurant/dashboard" className="block dark:text-white px-3 py-2 text-gray-800 hover:text-blue-600">
+              <Link href="/restaurant/dashboard" className="block dark:text-white text-black lg:text-white px-3 py-2  hover:text-blue-600">
                 Dashboard
               </Link>
             </li>
             <li>
-              <Link href="/login" className="block dark:text-white px-3 py-2 text-gray-800 hover:text-blue-600">
+              <Link href="/login" className="block dark:text-white text-black lg:text-white px-3 py-2  hover:text-blue-600">
                 Login
               </Link>
             </li>
             <li>
-              <Link href="/profile" className="block dark:text-white px-3 py-2 text-gray-800 hover:text-blue-600">
+              <Link href="/profile" className="block dark:text-white text-black lg:text-white px-3 py-2  hover:text-blue-600">
                 Profile
               </Link>
 
              
             </li>
             <li>
-              <button onClick={darkModeToggle} className="block px-3 py-2 dark:text-white text-gray-800 hover:text-blue-600">
+              <button onClick={darkModeToggle} className="block px-3 py-2 dark:text-white text-black lg:text-white  hover:text-blue-600">
                {isdarkMode ?" Dark Mode" : "Light Mode"}
               </button>
             </li>
