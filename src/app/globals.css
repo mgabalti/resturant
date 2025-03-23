@@ -4,25 +4,124 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.head-font{
+
+.head-font {
     font-family: "Barlow Condensed", sans-serif !important;
 
 }
+
+.food-card::before {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: var(--theme3);
+    content: "";
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    background-image: url(../assets/Food/catagory-card-shape.jpg);
+    border-radius: 14px;
+    z-index: 9;
+
+}
+
+.food-card h5 {
+    font-size: 19px;
+    color: white;
+    position: relative;
+    z-index: 9;
+}
+
+.food-card .catagory-product-icon {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.food-card:hover .catagory-product-icon {
+    opacity: 1;
+}
+
+.food-card .food-name-card {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.food-card:hover .food-name-card {
+    opacity: 0;
+
+}
+
+
+@media (max-width: 767px) {
+    .catagory-product-card .catagory-product-content::before {
+        left: 44%;
+    }
+}
+
+.food-card:hover .decor-leaf-2,
+.food-card:hover .decor-leaf {
+    transition: all 0.3s ease-in-out;
+}
+
+.food-card:hover .burger-shape {
+    transition: all 0.3s ease-in-out;
+    top: 8px;
+    left: 17px;
+
+}
+
+.food-card:hover .decor-leaf {
+    right: 0;
+    top: -15px;
+}
+
+.food-card:hover .decor-leaf-2 {
+    bottom: 17px;
+    left: -18px;
+    transform: rotate(-10deg);
+}
+
+.food-card:hover .catagory-product-content::before {
+    background-color: white;
+}
+
+.catagory-product-content::before {
+    position: absolute;
+    top: 0;
+    content: "";
+    left: 0;
+    width: 53px;
+    height: 2px;
+    background-color: red;
+    right: 0;
+    margin: auto;
+}
+
+.food-card .catagory-product-image {
+    position: relative;
+    z-index: 9;
+    height: 245px;
+}
+
 @media (min-width: 1024px) {
 
-    .restaurent-nav{
+    .restaurent-nav {
         background-color: transparent !important;
     }
 }
+
 @media (max-width: 1024px) {
-    .show-nav{
+    .show-nav {
         transform: translateX(-500px);
         transition: all ease .7s;
-        left:0px;
-    
+        left: 0px;
+
     }
-    .show-nav.show{
-        
+
+    .show-nav.show {
+
         transform: translateX(0px);
     }
 }
