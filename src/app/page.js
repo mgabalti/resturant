@@ -21,7 +21,7 @@ export default function Home() {
           <FoodCard />
         </div>
       </div>
-      <div className="w-10/12 mx-auto pt-16 mb-10">
+      <div className="lg:w-10/12 mx-auto pt-16 mb-10">
         <PizzaCard />
       </div>
 <BigPizza/>

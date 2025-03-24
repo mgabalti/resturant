@@ -12,7 +12,7 @@ export const BigPizza = () => {
     return (
        <div className="grid grid-cols-12 bg-white dark:bg-gray-900 relative ">
             <Image src={drinks} alt="img" className="absolute left-0 bottom-0"/>
-         <div className="food-comboo-content lg:col-span-5 pl-36 pt-20 pr-10 relative">
+         <div className="food-comboo-content lg:col-span-5 col-span-12 pl-36 pt-20 pr-10 relative">
             <div className="section-title">
                 <span className="head-font uppercase font-semibold text-red-500" >crispy, every bite taste</span>
                 <h2 className="text-6xl font-bold head-font uppercase dark:text-white">
@@ -56,7 +56,7 @@ export const BigPizza = () => {
                 </button>
             </div>
         </div>
-        <div className="lg:col-span-7 py-10 relative" style={{backgroundImage: `url(${combobg.src})`}}>
+        <div className="lg:col-span-7 py-10 relative lg:block hidden" style={{backgroundImage: `url(${combobg.src})`}}>
         <Image src={combopizza} alt="img" className="ml-10"/>
         <Image src={percent50} alt="img" className="absolute top-0 right-1/3"/>
         <Image src={bigpizza} alt="img"/>
