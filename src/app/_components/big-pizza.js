@@ -11,8 +11,8 @@ import drinks from "../../assets/Food/drinks.png";
 export const BigPizza = () => {
     return (
        <div className="grid grid-cols-12 bg-white dark:bg-gray-900 relative ">
-            <Image src={drinks} alt="img" className="absolute left-0 bottom-0"/>
-         <div className="food-comboo-content lg:col-span-5 col-span-12 pl-36 pt-20 pr-10 relative">
+            <Image src={drinks} alt="img" className="absolute left-0 bottom-0 sm:block hidden"/>
+         <div className="food-comboo-content lg:col-span-5 col-span-12 sm:pl-36 pt-20 pl-4 pr-4 sm:pr-10 relative">
             <div className="section-title">
                 <span className="head-font uppercase font-semibold text-red-500" >crispy, every bite taste</span>
                 <h2 className="text-6xl font-bold head-font uppercase dark:text-white">
