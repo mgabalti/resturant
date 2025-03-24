@@ -30,7 +30,7 @@ const [isdarkMode, setIsdarkMode] = useState(false);
     , []);
   return (
     <nav className="">
-      <div className="lg:container dark:bg-black restaurent-nav  mx-auto px-4 flex justify-between items-center py-4 bg-white dark:bg-gray-black ">
+      <div className="lg:container dark:bg-gray-800 restaurent-nav  mx-auto px-4 flex justify-between items-center py-4 bg-white dark:bg-gray-black ">
         <Link href="/" className="text-xl font-semibold text-white">
          <Image width={100} src="https://bizantheme.com/html/foodking-php/assets/img/logo/logo.svg" alt="logo" height={50} />
         </Link>
