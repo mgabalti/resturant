@@ -30,7 +30,7 @@ const [isdarkMode, setIsdarkMode] = useState(false);
     , []);
   return (
     <nav className="">
-      <div className="lg:container dark:bg-gray-800 restaurent-nav  mx-auto px-4 flex justify-between items-center py-4 bg-white dark:bg-gray-black ">
+      <div className="lg:container dark:bg-black restaurent-nav  mx-auto px-4 flex justify-between items-center py-4 bg-white dark:bg-gray-black ">
         <Link href="/" className="text-xl font-semibold text-white">
          <Image width={100} src="https://bizantheme.com/html/foodking-php/assets/img/logo/logo.svg" alt="logo" height={50} />
         </Link>
@@ -60,7 +60,7 @@ const [isdarkMode, setIsdarkMode] = useState(false);
           className={`${isOpen ? "show-nav show" : "show-nav"
             } lg:block lg:items-center lg:space-x-6 top-0   lg:mt-0 fixed lg:static w-80 lg:w-full ` }
         >
-          <ul className="flex flex-col lg:flex-row lg:justify-end lg:space-x-6 top-0 left-0 mt-0 h-screen lg:h-auto bg-white dark:bg-black lg:dark:bg-transparent  lg:bg-transparent">
+          <ul className="flex flex-col lg:flex-row lg:justify-end lg:space-x-6 top-0 left-0 mt-0 h-screen lg:h-auto bg-white dark:bg-gray-800 lg:dark:bg-transparent  lg:bg-transparent">
             <li>
               <Link href="/" className="block px-3 py-2 text-white  hover:text-blue-600">
                 Home
