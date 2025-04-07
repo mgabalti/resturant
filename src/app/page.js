@@ -4,6 +4,7 @@ import Herosection from "./_components/herosection";
 import { FoodCard } from "./_components/foodCard";
 import { PizzaCard } from "./_components/pizza-card";
 import { BigPizza } from "./_components/big-pizza";
+import { Footer } from "./_components/footer";
 export default function Home() {
   return (
     <div className="h-screen overflow-auto" >
@@ -25,6 +26,7 @@ export default function Home() {
         <PizzaCard />
       </div>
 <BigPizza/>
+<Footer/>
     </div>
   );
 }

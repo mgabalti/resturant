@@ -125,3 +125,14 @@
         transform: translateX(0px);
     }
 }
+
+html.dark .show-in-dark{
+display: block !important;
+}
+html:not(.dark) .hide-in-light{
+display: none !important;
+}
+
+html.dark .hide-in-dark{
+display: none !important;
+}

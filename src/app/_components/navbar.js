@@ -16,7 +16,10 @@ const [isdarkMode, setIsdarkMode] = useState(false);
     setIsdarkMode(localStorage.getItem('darkMode')  === 'true');
 
   }
-
+const toggleSidebar = (e) => {
+  e.stopPropagation();
+    setIsOpen(!isOpen);
+  }
   useEffect(() => {
     const darkmode = localStorage.getItem('darkMode')  === 'true';
     setIsdarkMode(darkmode);
@@ -32,13 +35,13 @@ const [isdarkMode, setIsdarkMode] = useState(false);
     <nav className="">
       <div className="lg:container dark:bg-black restaurent-nav  mx-auto px-4 flex justify-between items-center py-4 bg-white dark:bg-gray-black ">
         <Link href="/" className="text-xl font-semibold text-white">
-         <Image width={100} src="https://bizantheme.com/html/foodking-php/assets/img/logo/logo.svg" alt="logo" height={50} />
+         <Image width={100} className="" src="./logo/foodking-white.svg" alt="logo" height={50} />
         </Link>
         <div>
 
         <button
           className="lg:hidden  focus:outline-none dark:text-white"
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={() => toggleSidebar(event)}
         >
           <svg
             className="w-6 h-6"

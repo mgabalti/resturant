@@ -15,7 +15,7 @@ export const PizzaCard = () => {
                 <div className="lg:col-span-5 sm:h-96 rounded-3xl relative bg-gray-200 p-4 bg-no-repeat bg-cover" style={{ backgroundImage: `url(${offerbg.src})` }}>
                     <div className="grid sm:grid-cols-2 grid-cols-1 h-full">
                         <div className="flex flex-col align-items-center justify-center">
-                            <div class="offer-content">
+                            <div className="offer-content">
                                 <h5 className="head-font text-red-500 text-xl font-semibold text-center sm:text-left">crispy, every bite taste</h5>
                                 <h3 className="head-font text-6xl text-center sm:text-left text-white font-bold uppercase">
                                     SUPER <br/>
